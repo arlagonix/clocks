@@ -1,0 +1,20 @@
+.actionPanel {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.hide:hover {
+  opacity: 1;
+}
+
+@media not (hover: hover) {
+  button.removeButtonWhenCantHover {
+    display: none;
+  }
+}

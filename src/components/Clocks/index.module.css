@@ -1,0 +1,75 @@
+:root {
+  --amPmSize: 15vmin;
+  --amPmFontSize: 5vmin;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10vmin;
+  align-items: center;
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5vmin;
+  font-weight: 300;
+  color: var(--black);
+}
+
+.dayContainer {
+  display: flex;
+  gap: 2vmin;
+  align-items: center;
+}
+
+.highlight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5vmin;
+  font-weight: 800;
+  color: var(--black);
+}
+
+.separationDot {
+  --size: 1vmin;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--black);
+  border-radius: 999px;
+}
+
+.twoDotsSeparator {
+  font-size: 6rem;
+  color: var(--black);
+  margin-bottom: 1.5rem;
+}
+
+.timeContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (width < 1000px) {
+  .twoDotsSeparator {
+    display: none;
+  }
+}
+
+.amPm {
+  width: var(--amPmSize);
+  height: var(--amPmSize);
+  background-color: var(--white-1);
+  border: 2px solid var(--black);
+  border-radius: 3vmin;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 0px 32px rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  place-items: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--amPmFontSize);
+  font-weight: 600;
+  color: var(--black);
+  text-transform: uppercase;
+}
