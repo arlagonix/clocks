@@ -23,7 +23,7 @@ jobs:
       - name: Install dependecies
         run: npm ci
       - name: Lint application
-        run: npm run eslint
+        run: npm run lint
 
   build:
     runs-on: ubuntu-latest
