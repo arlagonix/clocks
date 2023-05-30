@@ -104,13 +104,10 @@ Figma prototype: https://www.figma.com/file/smtaFQVSv1tBtsiMHWzksy/Time-Now?type
 ├── 📁 docs                   Additional information, documentation
 │   └── 📁 results            Screenshots of how the application works after being fully developed
 |
-├── 📁 public                 Assets used in `index.html` (favicon)
-|
 ├── 📁 src                    Source files needed for application development
-│   ├── 📁 assets             Static assets: images, icons (empty)
+│   ├── 📁 assets             Static assets: images, icons, favicons
 │   ├── 📁 components         React components
-│   ├── 📁 components                 React components
-|   |   └── 📁 Component Name
+|   |   └── 📁 ComponentName
 |   |       ├── 📝 index.tsx          Component logic
 |   |       ├── 📝 index.module.css   Component styles
 |   |       └── 📝 index.types.tsx    Component types (optional)
@@ -118,11 +115,11 @@ Figma prototype: https://www.figma.com/file/smtaFQVSv1tBtsiMHWzksy/Time-Now?type
 │   ├── 📝 App.module.scss    App styles (optional)
 │   ├── 📝 index.css          Global styles
 │   ├── 📝 index.tsx          Entry point for the module bundler
+│   ├── 📝 index.html             Main html file
 │   └── 📝 vite-end.d.ts          Some Typescript stuff for Vite
 |
 ├── 📝 .eslintrc.cjs          ESLint configuration file
 ├── 📝 .gitignore             Instructions for Git about what files to ignore
-├── 📝 index.html             Main html file
 ├── 📝 LICENSE                MIT License. Basically you can do whatever you want with the code
 ├── 📝 README.md              Project description
 ├── 📝 package-lock.json      Keeps track of the exact version of every package that is installed
