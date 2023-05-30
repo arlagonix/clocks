@@ -46,13 +46,26 @@ function useSettingsState() {
   const queryParams = queryString.parse(location.search);
 
   const initialState: SettingsState = {
+    /*
+      It might look a bit complicated... So basically...
+
+      1. Get timezone from query params and try to find it in `timezones`. If there is no timezone, goto item 3.
+      2. If you couldn't find it, set the timezone to `timezones[0].name`
+      3. If there is no timezone in query params, get it from user's browser info and try to find it in `timezones`. 
+      4. If you couldn't find it, set the timezone to `timezones[0].name`
+
+      Query params > User's broswer info > timezones[0].name
+    */
     timezoneName: checkIfSpecified<TimezoneNamesType>(
       queryParams.timezoneName,
       (param) =>
         timezones.some((tz) => tz.name === param)
           ? (param as TimezoneNamesType)
           : timezones[0].name,
-      timezones[0].name
+      timezones.find(
+        (tz) =>
+          tz.name === Intl.DateTimeFormat().resolvedOptions().timeZone ?? ""
+      )?.name ?? (timezones[0].name as TimezoneNamesType)
     ),
     displayTimezone: checkIfSpecified<boolean>(
       queryParams.displayTimezone,
