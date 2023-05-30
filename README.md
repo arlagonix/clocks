@@ -6,11 +6,11 @@
 </p>
 
 <p align="center">
-  <a href="../../actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/arlagonix/results-summary/main.yml"></a>
-  <a href="../../commits"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arlagonix/results-summary"></a>
-  <a href="./LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/arlagonix/results-summary"></a>
-  <img src="https://badgen.net/github/dependabot/arlagonix/results-summary?logo=dependabot&logoColor=white" />
-  <img src="https://img.shields.io/github/repo-size/arlagonix/results-summary" />
+  <a href="../../actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/arlagonix/clocks/main.yml"></a>
+  <a href="../../commits"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arlagonix/clocks"></a>
+  <a href="./LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/arlagonix/clocks"></a>
+  <img src="https://badgen.net/github/dependabot/arlagonix/clocks?logo=dependabot&logoColor=white" />
+  <img src="https://img.shields.io/github/repo-size/arlagonix/clocks" />
 </p>
 
 <p align="center">
