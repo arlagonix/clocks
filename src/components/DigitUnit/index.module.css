@@ -25,18 +25,17 @@
 }
 
 .bounceAnimation {
-  animation: bounce 0.75s;
+  animation: bounce 0.75s linear;
 }
 
 @keyframes bounce {
   0%,
   100% {
-    animation-timing-function: ease-in;
     transform: translateY(0%);
   }
+
   50% {
-    animation-timing-function: ease-out;
-    transform: translateY(15%);
+    transform: translateY(10%);
   }
 }
 
@@ -47,7 +46,7 @@
 }
 
 .bounceAnimation .digitGroup {
-  animation: 0.5s move forwards;
+  animation: 0.73s move forwards ease-in-out;
 }
 
 @keyframes move {
